@@ -2,10 +2,11 @@
 
 # Data Cleaning
 
+# Call Stored Procedure
+
 CALL clean_data();
 
-
-## Since there's no data related to days in this dataset, all analysis will be related to Years & Months!! ##
+## There are no formal dates in this dataset. All analysis will be related to Years & Months!! ##
 
 # ---------------------------------------------------------------------------------------------------------------
 
