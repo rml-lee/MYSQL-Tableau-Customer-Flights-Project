@@ -63,7 +63,7 @@ ORDER BY 2 DESC;
 
 
 
--- 2. Measure the volume of enrollments and cancellations for customers with a 2018 promotion enrollment type per loyalty card.
+-- 2. What is the total amount of enrollment and cancellations between loyalty cards with a 2018 promotion enrollment type?
 SELECT
     loyalty_card,
     IF(cancellation_date IS NULL, 'Active', 'Inactive') AS status,
