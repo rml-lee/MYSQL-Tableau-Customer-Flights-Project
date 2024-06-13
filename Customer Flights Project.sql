@@ -216,9 +216,9 @@ WHERE
 
 
 
--- 11. What was the Churn Rate per quarter during 2017?
+-- 11. What was the Churn Rate per quarter during 2018?
 SELECT
-    2017 AS 'year',
+    2018 AS 'year',
     'Q1' AS 'quarter',
     COUNT(*) AS enrolled_at_start_of_quarter,
     COUNT(cancellation_date) AS canceled_in_quarter,
@@ -226,12 +226,14 @@ SELECT
 FROM
     customer_loyalty_history
 WHERE
-    enrollment_date <= '2017-01-01'
-AND (cancellation_date BETWEEN '2017-01-01' AND '2017-03-31'
+    enrollment_date <= '2018-01-01'
+AND (cancellation_date BETWEEN '2018-01-01' AND '2018-03-31'
 OR   cancellation_date IS NULL)
+
 UNION ALL
+
 SELECT
-    2017 AS 'year',
+    2018 AS 'year',
     'Q2' AS 'quarter',
     COUNT(*) AS enrolled_at_start_of_quarter,
     COUNT(cancellation_date) AS canceled_in_quarter,
@@ -239,12 +241,14 @@ SELECT
 FROM
     customer_loyalty_history
 WHERE
-    enrollment_date <= '2017-04-01'
-AND (cancellation_date BETWEEN '2017-04-01' AND '2017-06-30'
+    enrollment_date <= '2018-04-01'
+AND (cancellation_date BETWEEN '2018-04-01' AND '2018-06-30'
 OR   cancellation_date IS NULL)
+
 UNION ALL
+
 SELECT
-    2017 AS 'year',
+    2018 AS 'year',
     'Q3' AS 'quarter',
     COUNT(*) AS enrolled_at_start_of_quarter,
     COUNT(cancellation_date) AS canceled_in_quarter,
@@ -252,12 +256,14 @@ SELECT
 FROM
     customer_loyalty_history
 WHERE
-    enrollment_date <= '2017-07-01'
-AND (cancellation_date BETWEEN '2017-07-01' AND '2017-09-30'
+    enrollment_date <= '2018-07-01'
+AND (cancellation_date BETWEEN '2018-07-01' AND '2018-09-30'
 OR   cancellation_date IS NULL)
+
 UNION ALL
+
 SELECT
-    2017 AS 'year',
+    2018 AS 'year',
     'Q4' AS 'quarter',
     COUNT(*) AS enrolled_at_start_of_quarter,
     COUNT(cancellation_date) AS canceled_in_quarter,
@@ -265,6 +271,6 @@ SELECT
 FROM
     customer_loyalty_history
 WHERE
-    enrollment_date <= '2017-10-01'
-AND (cancellation_date BETWEEN '2017-10-01' AND '2017-12-31'
+    enrollment_date <= '2018-10-01'
+AND (cancellation_date BETWEEN '2018-10-01' AND '2018-12-31'
 OR   cancellation_date IS NULL);
