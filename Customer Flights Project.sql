@@ -63,7 +63,7 @@ ORDER BY 2 DESC;
 
 
 
--- 2. Measuring enrollment and cancellation during the 2018 promotion per loyalty card.
+-- 2. Measure the volume of enrollments and cancellations for customers with a 2018 promotion enrollment type per loyalty card.
 SELECT
     loyalty_card,
     IF(cancellation_date IS NULL, 'Active', 'Inactive') AS status,
@@ -77,7 +77,7 @@ ORDER BY 1 ASC;
 
 
 
--- 3. How has the gender enrollment changed over the years?
+-- 3. How has enrollment by gender changed over the years?
 SELECT
     YEAR(enrollment_date) AS year,
     gender,
@@ -86,6 +86,7 @@ FROM
     customer_loyalty_history
 GROUP BY 1, 2
 ORDER BY 1 ASC;
+
 
 
 -- 4. What effect did the 2018 promotion have on the amount of enrollment compared to previous years?
@@ -103,9 +104,11 @@ ORDER BY 1 ASC;
 
 
 
--- 5. List customers who enrolled into a loyalty program and dropped within 1 month of enrollment during 2015.
+-- 5. List the customers who enrolled into a loyalty program and dropped within 1 month of enrollment during 2015.
 SELECT
-    loyalty_number
+    loyalty_number,
+    enrollment_date,
+    cancellation_date
 FROM
     customer_loyalty_history
 WHERE
@@ -134,7 +137,7 @@ ORDER BY 1 ASC;
 
 
 
--- 7. Return customer info who traveled the furthest distance.
+-- 7. Which customers traveled the furthest?
 SELECT
     *
 FROM
@@ -216,61 +219,55 @@ WHERE
 
 
 
--- 11. What was the Churn Rate per quarter during 2018?
+-- 11. What was the quarterly Churn Rate during 2018?
+
+-- Common Table Expression (CTE) for calculating churn rate by quarter
+WITH quarterly_data AS
+    (SELECT
+        2018 AS 'year',
+        'Q1' AS 'quarter',
+        COUNT(*) AS enrolled_at_start_of_quarter,
+        SUM(IF(cancellation_date BETWEEN '2018-01-01' AND '2018-03-31', 1, 0)) AS canceled_in_quarter
+    FROM
+        customer_loyalty_history
+    WHERE
+        enrollment_date <= '2018-01-01'
+    UNION ALL
+    SELECT
+        2018 AS 'year',
+        'Q2' AS 'quarter',
+        COUNT(*) AS enrolled_at_start_of_quarter,
+        SUM(IF(cancellation_date BETWEEN '2018-04-01' AND '2018-06-30', 1, 0)) AS canceled_in_quarter
+    FROM
+        customer_loyalty_history
+    WHERE
+        enrollment_date <= '2018-04-01'
+    UNION ALL
+    SELECT
+        2018 AS 'year',
+        'Q3' AS 'quarter',
+        COUNT(*) AS enrolled_at_start_of_quarter,
+        SUM(IF(cancellation_date BETWEEN '2018-07-01' AND '2018-09-30', 1, 0)) AS canceled_in_quarter
+    FROM
+        customer_loyalty_history
+    WHERE
+        enrollment_date <= '2018-07-01'
+    UNION ALL
+    SELECT
+        2018 AS 'year',
+        'Q4' AS 'quarter',
+        COUNT(*) AS enrolled_at_start_of_quarter,
+        SUM(IF(cancellation_date BETWEEN '2018-10-01' AND '2018-12-31', 1, 0)) AS canceled_in_quarter
+    FROM
+        customer_loyalty_history
+    WHERE
+        enrollment_date <= '2018-10-01')
+-- Final SELECT statement to calculate the churn rate
 SELECT
-    2018 AS 'year',
-    'Q1' AS 'quarter',
-    COUNT(*) AS enrolled_at_start_of_quarter,
-    COUNT(cancellation_date) AS canceled_in_quarter,
-    (COUNT(cancellation_date) / COUNT(*)) * 100 AS churn_rate
+    year,
+    quarter,
+    enrolled_at_start_of_quarter,
+    canceled_in_quarter,
+    (canceled_in_quarter / enrolled_at_start_of_quarter) * 100 AS churn_rate
 FROM
-    customer_loyalty_history
-WHERE
-    enrollment_date <= '2018-01-01'
-AND (cancellation_date BETWEEN '2018-01-01' AND '2018-03-31'
-OR   cancellation_date IS NULL)
-
-UNION ALL
-
-SELECT
-    2018 AS 'year',
-    'Q2' AS 'quarter',
-    COUNT(*) AS enrolled_at_start_of_quarter,
-    COUNT(cancellation_date) AS canceled_in_quarter,
-    (COUNT(cancellation_date) / COUNT(*)) * 100 AS churn_rate
-FROM
-    customer_loyalty_history
-WHERE
-    enrollment_date <= '2018-04-01'
-AND (cancellation_date BETWEEN '2018-04-01' AND '2018-06-30'
-OR   cancellation_date IS NULL)
-
-UNION ALL
-
-SELECT
-    2018 AS 'year',
-    'Q3' AS 'quarter',
-    COUNT(*) AS enrolled_at_start_of_quarter,
-    COUNT(cancellation_date) AS canceled_in_quarter,
-    (COUNT(cancellation_date) / COUNT(*)) * 100 AS churn_rate
-FROM
-    customer_loyalty_history
-WHERE
-    enrollment_date <= '2018-07-01'
-AND (cancellation_date BETWEEN '2018-07-01' AND '2018-09-30'
-OR   cancellation_date IS NULL)
-
-UNION ALL
-
-SELECT
-    2018 AS 'year',
-    'Q4' AS 'quarter',
-    COUNT(*) AS enrolled_at_start_of_quarter,
-    COUNT(cancellation_date) AS canceled_in_quarter,
-    (COUNT(cancellation_date) / COUNT(*)) * 100 AS churn_rate
-FROM
-    customer_loyalty_history
-WHERE
-    enrollment_date <= '2018-10-01'
-AND (cancellation_date BETWEEN '2018-10-01' AND '2018-12-31'
-OR   cancellation_date IS NULL);
+    quarterly_data;
