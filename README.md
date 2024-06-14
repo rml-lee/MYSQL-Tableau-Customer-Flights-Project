@@ -8,7 +8,7 @@ Domain: Marketing and Customer Analytics. It involves aspects of promotional cam
 
 
 # Data Schema
-
+https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/blob/main/Schema.png
 
 
 
