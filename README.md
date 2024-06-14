@@ -15,3 +15,12 @@ Original Dataset: Airline Loyalty Campaign Program Impact on Flights - [Kaggle](
 
 
 # Data Dictionary
+
+
+# Data Cleaning
+
+
+# Data Analysis
+
+
+# Summary/Findings
