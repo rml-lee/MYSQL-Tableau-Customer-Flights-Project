@@ -9,11 +9,6 @@ Domain: Marketing and Customer Analytics. It involves aspects of promotional cam
 Original Dataset: Airline Loyalty Campaign Program Impact on Flights - [Kaggle](https://www.kaggle.com/datasets/agungpambudi/airline-loyalty-campaign-program-impact-on-flights?select=Customer+Flight+Activity.csv)
 
 
-# Data Schema
-![customer_flight_activity](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/8c12f0af-f320-4cba-a141-7c1335e2fc6e)
-
-
-
 # Data Dictionary
 
 ## Table of Contents
@@ -56,6 +51,8 @@ Original Dataset: Airline Loyalty Campaign Program Impact on Flights - [Kaggle](
 | Cancellation Year            | Year Member cancelled their membership                              |
 | Cancellation Month           | Month Member cancelled their membership                             |
 
+# Data Schema
+![customer_flight_activity](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/8c12f0af-f320-4cba-a141-7c1335e2fc6e)
 
 
 
