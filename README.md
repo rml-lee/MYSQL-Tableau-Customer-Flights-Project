@@ -64,6 +64,8 @@ The procedure will be called during the Data Transformation phase of this projec
 You can access the SQL file for data cleaning [here](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/blob/main/Data%20Cleaning%20-%20Stored%20Procedure.sql).
 
 # Data Schema
+After cleaning the data, this is our schema that will be used throughout this project.
+
 ![customer_flight_activity](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/8c12f0af-f320-4cba-a141-7c1335e2fc6e)
 
 
