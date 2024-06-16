@@ -1,19 +1,23 @@
 # Customer-Flights-Project
 
-# Briefing
+# Business Task
 This dataset contains information related to a promotional campaign conducted in 2018 by an airline to boost program enrollment. 
 We'll examine the historical customer booking and flight activity, as well as the results of the campaign.
 
 Domain: Marketing and Customer Analytics. It involves aspects of promotional campaigns, customer behavior, and loyalty program analysis.
 
-Original Dataset: Airline Loyalty Campaign Program Impact on Flights - [Kaggle](https://www.kaggle.com/datasets/agungpambudi/airline-loyalty-campaign-program-impact-on-flights?select=Customer+Flight+Activity.csv)
+## Table of Contents
+- [Data Source](#data-source)
+- [Data Dictionary](#data-dictionary)
+- [Data Cleaning](#data-cleaning)
+- [Data Schema](#data-schema)
+- [Data Transformation](#data-transformation)
+- [Analysis/Findings](#analysisfindings)
 
+# Data Source
+Airline Loyalty Campaign Program Impact on Flights - [Kaggle](https://www.kaggle.com/datasets/agungpambudi/airline-loyalty-campaign-program-impact-on-flights?select=Customer+Flight+Activity.csv)
 
 # Data Dictionary
-
-## Table of Contents
-- [Customer Flight Activity](#customer-flight-activity)
-- [Customer Loyalty History](#customer-loyalty-history)
 
 ## Customer Flight Activity
 
@@ -51,9 +55,20 @@ Original Dataset: Airline Loyalty Campaign Program Impact on Flights - [Kaggle](
 | Cancellation Year            | Year Member cancelled their membership                              |
 | Cancellation Month           | Month Member cancelled their membership                             |
 
+# Data Cleaning
+Effective data analysis begins with ensuring the data is clean and well-structured.
+
+To facilitate this process, i've provided a SQL script that performs the necessary data cleaning operations. The script is a stored procedure. By running this script, the dataset is prepared for accurate and reliable analysis.
+The procedure will be called during the Data Transformation phase of this project. 
+
+You can access the SQL file for data cleaning [here](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/blob/main/Data%20Cleaning%20-%20Stored%20Procedure.sql).
+
 # Data Schema
 ![customer_flight_activity](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/8c12f0af-f320-4cba-a141-7c1335e2fc6e)
 
 
+# Data Transformation
+The provided SQL script contains a set of questions with queries used to gather insight about this dataset using MYSQL. You can access the SQL file [here](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/blob/main/Customer%20Flights%20Project.sql).
 
-# Summary/Findings
+
+# Analysis/Findings
