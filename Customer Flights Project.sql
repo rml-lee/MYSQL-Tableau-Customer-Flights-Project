@@ -1,10 +1,13 @@
-# Customer Loyalty Program Project
+# Airline Loyalty Campaign Program Analysis
 
-## There are no formal dates in this dataset. All analysis will be related to Years & Months!! ##
+
+# --------------------------------------------------------------------------------------------------------------
+
+## There are no formal days in this dataset. All analysis will be related to Years & Months!! ##
 
 # ---------------------------------------------------------------------------------------------------------------
 
-# Data Analysis
+
 
 -- 1. What were the most popular loyalty cards during the 2018 promotion?
 SELECT
