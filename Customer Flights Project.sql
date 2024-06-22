@@ -1,50 +1,6 @@
 # Customer Loyalty Program Project
 
-# Data Cleaning
-
-# Call Stored Procedure
-
-CALL clean_data();
-
 ## There are no formal dates in this dataset. All analysis will be related to Years & Months!! ##
-
-# ---------------------------------------------------------------------------------------------------------------
-
-# Descriptive Statistics
-
--- View distinct list of Enrollment Types
-SELECT DISTINCT
-    enrollment_type
-FROM
-    customer_loyalty_history;
-
-
--- Customer Loyalty History - Year Range
-SELECT DISTINCT
-    YEAR(enrollment_date) AS year
-FROM
-    customer_loyalty_history
-ORDER BY 1 ASC;
--- Result: 2012 - 2018
-
-
--- Customer Flight Activity - Year Range
-SELECT DISTINCT
-    YEAR(date) AS year
-FROM
-    customer_flight_activity;
--- Result: 2017 - 2018
-
--- 2018 Promotion time range
-SELECT DISTINCT
-    MONTH(enrollment_date) AS months
-FROM
-    customer_loyalty_history
-WHERE
-    enrollment_type = '2018 Promotion'
-ORDER BY 1 ASC;
--- Result: Months 2 - 4 (Feb. - Apr.)
-
 
 # ---------------------------------------------------------------------------------------------------------------
 
