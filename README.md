@@ -56,12 +56,9 @@ Airline Loyalty Campaign Program Impact on Flights - [Kaggle](https://www.kaggle
 | Cancellation Month           | Month Member cancelled their membership                             |
 
 # Data Cleaning & Exploration
-Effective data analysis begins with ensuring the data is clean and well-structured.
+Effective data analysis begins with exploring the data, gathering insights, and ensuring the data is clean and well-structured. To facilitate this process, i've provided a Jupyter Notebook file that performs the necessary data cleaning operations. By running this script, the dataset is prepared for accurate and reliable analysis.
 
-To facilitate this process, i've provided a SQL script that performs the necessary data cleaning operations. The script is a stored procedure. By running this script, the dataset is prepared for accurate and reliable analysis.
-The procedure will be called during the Data Transformation phase of this project. 
-
-You can access the notebook file for data cleaning & Exploration [here](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/blob/main/Data%20Cleaning%20%26%20Exploration%20-%20Airline%20Loyalty%20Campaign%20Program%20Impact%20on%20Flights.ipynb).
+You can access the notebook file for Data Cleaning & Exploration [here](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/blob/main/Data%20Cleaning%20%26%20Exploration%20-%20Airline%20Loyalty%20Campaign%20Program%20Impact%20on%20Flights.ipynb).
 
 # Data Schema
 After cleaning the data, this is our schema that will be used throughout this project.
