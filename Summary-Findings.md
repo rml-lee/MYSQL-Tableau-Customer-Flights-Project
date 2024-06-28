@@ -3,7 +3,7 @@
 ## 3. How has enrollment by gender changed over the years?
 ![Line Chart](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/d6fa6f40-6d48-4e06-89bd-6315649ddb52)
 
-- Prior to 2015, the number of male and female enrollments was roughly equal, but as time goes on, more females tend to enroll compared to males. This is likely due to the marketing inadvertently resonating more with females. This can include how imagery, language, or offers are presented. 
+- Prior to 2015, the number of male and female enrollments was roughly equal, but over time, more females have tended to enroll compared to males. 
 
 - Recommendation: Re-assess the dynamics of the current marketing and advertisement campaign so that it can help tailor future promotions and marketing strategies to attract a more balanced enrollment base.
 
