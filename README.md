@@ -1,8 +1,8 @@
 # Customer-Flights-Project
 
 # Business Task
-This dataset contains information related to a promotional campaign conducted in 2018 by an airline to boost program enrollment. 
-We'll examine the historical customer booking and flight activity, as well as the results of the campaign.
+This dataset contains information related to a promotional campaign conducted in 2018 by an airline in order to boost program enrollment. 
+We're going to extract some insights and trends about historical customer booking and flight activity, as well as analyze the results of the campaign.
 
 Domain: Marketing and Customer Analytics. It involves aspects of promotional campaigns, customer behavior, and loyalty program analysis.
 
