@@ -1,4 +1,4 @@
-# Summary/Findings
+# Analysis/Findings
 
 ## 3. How has enrollment by gender changed over the years?
 
