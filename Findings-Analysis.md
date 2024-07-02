@@ -22,7 +22,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 - April was the strongest month during the promotion, which yielded a total of 346 new customers. 
 
-- Recommendations: Continue to implement the promotion program annually and come up with new ways to creatively advertise and market this program in order to attract new customers.
+- Recommendations: Continue to implement the promotion program annually and explore new creative ways to advertise and market it to attract new customers.
 
 
 ## 11. What was the quarterly Churn Rate during 2018?
