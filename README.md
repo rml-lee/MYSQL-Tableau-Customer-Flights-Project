@@ -12,7 +12,7 @@ We're going to extract some insights and trends about historical customer bookin
 - [Data Cleaning & Exploration](#data-cleaning--Exploration)
 - [Data Schema](#data-schema)
 - [Data Transformation](#data-transformation)
-- [Analysis/Findings](#analysisfindings)
+- [Analysis & Findings](#analysis--findings)
 
 # Data Source
 Airline Loyalty Campaign Program Impact on Flights - [Kaggle](https://www.kaggle.com/datasets/agungpambudi/airline-loyalty-campaign-program-impact-on-flights?select=Customer+Flight+Activity.csv)
@@ -86,7 +86,7 @@ The provided SQL script contains a set of questions with queries used to gather 
 You can access the SQL file [here](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/blob/main/Customer%20Flights%20Project.sql).
 
 
-# Analysis/Findings
+# Analysis & Findings
 
 Tools used:
 | Tableau |
