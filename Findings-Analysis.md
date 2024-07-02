@@ -32,6 +32,8 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 ![Dual Combination](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/02ff4248-7db4-453a-90a1-80d579626c3f)
 
 - The Churn Rate overall has been relatively low, hovering around 1% throughout the year of 2018. This indicates that there’s a high level of customer retention.
-
+  
+- The small decline in churn rate during the second quarter is likely due to the amount of new customers obtained during the 2018 promotion.
+  
 - Recommendations: Continue to understand the customer. Continuously gather and analyze customer feedback to understand their needs, preferences, and grievances. Use surveys, focus groups, and social media listening tools. This will help maintain and potentially improve churn rate.
 
