@@ -2,7 +2,7 @@
 
 # Business Task
 This dataset contains information related to a promotional campaign conducted in 2018 by an airline in order to boost program enrollment. 
-We're going to extract some insights and trends about historical customer booking and flight activity, as well as analyze the results of the campaign.
+Extract insights and trends about historical customer booking and flight activity, as well as analyze the results of the campaign.
 
 **Domain**: Marketing and Customer Analytics
 
