@@ -1,4 +1,4 @@
-# Customer-Flights-Project
+# Customer Loyalty Program Analysis
 
 # Business Task
 This dataset contains information related to a promotional campaign conducted in 2018 by an airline in order to boost program enrollment. 
