@@ -147,7 +147,7 @@ SELECT
 FROM
     promo p
     LEFT JOIN aurora_promo a
-    ON a.loyalty_number = p.loyalty_number
+    ON p.loyalty_number = a.loyalty_number
 GROUP BY 1
 ORDER BY 1 ASC;
 
