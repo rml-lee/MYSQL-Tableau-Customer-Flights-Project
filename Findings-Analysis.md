@@ -4,7 +4,7 @@
 
 Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProject/LineChart?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
-![Line Chart](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/d6fa6f40-6d48-4e06-89bd-6315649ddb52)
+![Line Chart](https://github.com/rml-lee/Customer-Loyalty-Program-Analysis/assets/160198611/ef6b0d1c-8633-42f9-b0cd-0ee465d24fc3)
 
 - Prior to 2015, the number of male and female enrollments was roughly equal, but over time, more females have tended to enroll compared to males. 
 
