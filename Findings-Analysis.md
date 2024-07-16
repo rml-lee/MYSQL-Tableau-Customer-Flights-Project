@@ -8,7 +8,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 - Prior to 2015, the number of male and female enrollments was roughly equal, but over time, more females have tended to enroll compared to males. 
 
-- Recommendation: Reassess the dynamics of the current marketing and advertising campaign to help tailor future promotions and strategies for attracting a more balanced enrollment base.
+- **Recommendations**: Reassess the dynamics of the current marketing and advertising campaign to help tailor future promotions and strategies for attracting a more balanced enrollment base.
 
 ## 4. What effect did the 2018 promotion have on the amount of enrollment compared to previous years?
 
@@ -22,7 +22,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 - April was the strongest month during the promotion, which yielded a total of 346 new customers. 
 
-- Recommendations: Continue to implement the promotion program annually and explore new creative ways to advertise and market it to attract new customers.
+- **Recommendations**: Continue to implement the promotion program annually and explore new creative ways to advertise and market it to attract new customers.
 
 
 ## 11. What was the quarterly Churn Rate during 2018?
@@ -35,5 +35,5 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
   
 - The small decline in churn rate during the second quarter is likely due to the amount of new customers obtained during the 2018 promotion.
   
-- Recommendations: Continue to understand the customer. Continuously gather and analyze customer feedback to understand their needs, preferences, and grievances. Use surveys, focus groups, and social media listening tools. This will help maintain and potentially improve churn rate.
+- **Recommendations**: Continue to understand the customer. Continuously gather and analyze customer feedback to understand their needs, preferences, and grievances. Use surveys, focus groups, and social media listening tools. This will help maintain and potentially improve churn rate.
 
