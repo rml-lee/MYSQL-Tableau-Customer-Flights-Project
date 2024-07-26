@@ -10,7 +10,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
   
 - Customers with the lowest average lifetime value are primarily located in the **Yukon**. This is largely due to the province's unique economic and logistical challenges, including its remote location, high transportation costs, and elevated prices for goods and services. As a result, it tends to have a higher Cost of Living Index compared to many other Canadian provinces.
 
-- **Recommendation**: 
+- **Recommendation**: Consider retailoring marketing strategies towards lower valued customers. Create targeted promotions, region-specific offers, or localized advertising to help extend lifetime value. 
 
 ## 4. What impact did the 2018 promotion have on the amount of enrollment compared to previous years?
 
