@@ -36,19 +36,19 @@ ORDER BY 1 ASC;
 
 
 
--- 3. How has enrollment by gender changed over the years?
+-- 3. Which locations do our most valuable customers come from?
 SELECT
-    YEAR(enrollment_date) AS year,
-    gender,
-    COUNT(*) AS total_enrollment
+    country,
+    province,
+    ROUND(AVG(clv), 2) AS avg_clv
 FROM
     customer_loyalty_history
 GROUP BY 1, 2
-ORDER BY 1 ASC;
+ORDER BY 3 DESC;
 
 
 
--- 4. What effect did the 2018 promotion have on the amount of enrollment compared to previous years?
+-- 4. What impact did the 2018 promotion have on the amount of enrollment compared to previous years?
 -- Measure the performance of the 2018 promotion (Feb. - Apr.) compared to previous years.
 SELECT
     DATE_FORMAT(enrollment_date, '%Y-%m') AS year,
@@ -165,7 +165,7 @@ WITH cte AS
               customer_loyalty_history
           WHERE
                 YEAR(enrollment_date) = 2018
-            AND MONTH(enrollment_date) IN (02, 03)
+            AND MONTH(enrollment_date) IN (2, 3)
           GROUP BY 1, 2)
 SELECT
     city,
