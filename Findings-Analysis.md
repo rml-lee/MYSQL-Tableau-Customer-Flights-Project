@@ -8,7 +8,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 - Our most valuable customers are coming from the Eastern Canadian provinces of **Quebec, Newfoundland and Labrador, and New Brunswick**.
   
-- Customers with the lowest lifetime value are primarily located in the Yukon. This is largely due to the province's unique economic and logistical challenges. Remote location, high transportation costs, and elevated prices for goods and services contribute to it's higher Cost of Living Index compared to many other Canadian provinces.
+- Customers with the lowest lifetime value are primarily located in the **Yukon**. This is largely due to the province's unique economic and logistical challenges. Remote location, high transportation costs, and elevated prices for goods and services contribute to it's higher Cost of Living Index compared to many other Canadian provinces.
 
 - Recommendation: 
 
