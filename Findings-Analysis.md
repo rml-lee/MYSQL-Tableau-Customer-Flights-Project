@@ -1,16 +1,18 @@
 # Findings & Analysis
 
-## 3. How has enrollment by gender changed over the years?
+## 3. Which locations do our most valuable customers come from?
 
-Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProject/LineChart?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
+Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProject/Map?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-![Line Chart](https://github.com/rml-lee/Customer-Loyalty-Program-Analysis/assets/160198611/ef6b0d1c-8633-42f9-b0cd-0ee465d24fc3)
+![Map](https://github.com/user-attachments/assets/115efc3e-3fb9-4696-a1ba-d6d672342e0c)
 
-- Prior to 2015, the number of male and female enrollments was roughly equal, but over time, more females have tended to enroll compared to males. 
+- Our most valuable customers are coming from the Eastern Canadian provinces of **Quebec, Newfoundland and Labrador, and New Brunswick**.
+  
+- Customers with the lowest lifetime value are primarily located in the Yukon. This is largely due to the province's unique economic and logistical challenges. Remote location, high transportation costs, and elevated prices for goods and services contribute to it's higher Cost of Living Index compared to many other Canadian provinces.
 
-- **Recommendations**: Reassess the dynamics of the current marketing and advertising campaign to help tailor future promotions and strategies for attracting a more balanced enrollment base.
+- Recommendation: 
 
-## 4. What effect did the 2018 promotion have on the amount of enrollment compared to previous years?
+## 4. What impact did the 2018 promotion have on the amount of enrollment compared to previous years?
 
 Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProject/GroupedBarChart2?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
