@@ -8,7 +8,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 - On average, the highest lifetime value customers are coming from the Eastern Canadian provinces of **Quebec, Newfoundland and Labrador, and New Brunswick**.
   
-- Customers with the lowest average lifetime value are primarily located in the western territory of **Yukon**. This is largely due to the province's unique economic and logistical challenges, including its remote location, high transportation costs, and elevated prices for goods and services. As a result, it tends to have a higher Cost of Living Index compared to many other Canadian provinces.
+- Customers with the lowest average lifetime value are primarily located in the western territory of **Yukon**. This is largely due to the territory's unique economic and logistical challenges, including its remote location, high transportation costs, and elevated prices for goods and services. As a result, it tends to have a higher Cost of Living Index compared to many other Canadian provinces.
 
 - **Recommendation**: Consider retailoring marketing strategies towards lower valued customers. Create targeted promotions, region-specific offers, or localized advertising to help extend lifetime value. 
 
